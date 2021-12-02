@@ -1,0 +1,163 @@
+.main {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  .main {
+    height: 8rem;
+  }
+}
+.logo {
+  height: 8rem;
+  line-height: 8rem;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.menus {
+  height: 8rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+}
+
+.nav {
+  height: 8rem;
+  line-height: 8rem;
+  position: relative;
+  z-index: 5;
+  a {
+    margin: 0 4.9rem;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+}
+.concact {
+  height: 8rem;
+  line-height: 8rem;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+article {
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.banner1 {
+  text-align: center;
+  font-size: 4.8rem;
+  color: #ffffff;
+  position: relative;
+  padding: 4rem 0;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 13.8rem;
+    height: 1px;
+    background: #1de9b6;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+  }
+}
+.banner2 {
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+// .flex_center{
+//   display: flex;
+// }
+
+.flex_between {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #404040;
+}
+
+.footer_logo {
+  padding-top: 2rem;
+  text-align: center;
+}
+.foot_concact {
+  text-align: center;
+  padding-top: 2rem;
+  display: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #777777;
+  padding: 2rem 0;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 0 2rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  footer {
+    position: relative;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav {
+    .navlist {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .navshow {
+      display: block;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin: 0 1rem;
+    }
+  }
+  .menus {
+    display: flex;
+  }
+  .concact {
+    display: none;
+  }
+  .foot_concact {
+    display: block;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  footer {
+    position: relative;
+  }
+}
