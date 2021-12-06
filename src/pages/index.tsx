@@ -32,7 +32,7 @@ export default function IndexPage() {
                 hide ? styles.navlist + ' ' + styles.navshow : styles.navlist
               }
             >
-              <a href="" target="_blank">
+              <a href="https://loft-finance.gitbook.io/docs" target="_blank">
                 Docs
               </a>
               {/* <a href="" target="_blank" >Whitepaper</a> */}
