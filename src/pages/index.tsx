@@ -35,7 +35,9 @@ export default function IndexPage() {
               <a href="https://loft-finance.gitbook.io/docs" target="_blank">
                 Docs
               </a>
-              {/* <a href="" target="_blank" >Whitepaper</a> */}
+              <a href="https://medium.com/@loftfinance" target="_blank">
+                Medium
+              </a>
             </div>
           </div>
           <div className={styles.concact}>
